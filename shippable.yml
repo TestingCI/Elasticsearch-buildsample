@@ -12,6 +12,6 @@ script:
 
 #exclude
 branches:
-  except:
+  only:
     - stage
     
