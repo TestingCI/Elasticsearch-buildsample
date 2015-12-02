@@ -1,6 +1,10 @@
 language: python
 
-#python:
+python:
+ - 2.7
+
+env:
+ - secure: CQIMhOFFqzJc38jVNKpeYpvohj5E7neTbMeAxZDR1gBXLvgF3Ri1g8+wWiLYKdRcI0YFuv4vBHDhp61eT5pMaObsgF1wv8JNWhCGwsVMXYXSQjPyuVHbW7y4ZRFWRUm5hp8ckqr7Jf2f/A5Bhzoq015OCByD1VOnUJusnX9iPwn7zh62rm/y9i2cbIwUFe4zpgS/rThBP7sUuv+ZNS0+fqPYr1/WYgj6N/mKAHtzotYDtacdFE2rqqJKE3VXLs119at8mo1o5uN2GxQ4HCCSQa0r0QqaEu0YWw7t3efI7qhHu7JHoRKs/KvYJVAPg3e8zcjFQKvOVReYZo9w/YVMiA== 
  
 services:
  - elasticsearch
@@ -9,6 +13,7 @@ install: pip install --use-mirrors -r requirements.txt
 
 script:
  - python sample.py
+ - echo $key1
 
 #exclude
 branches:
